@@ -1,0 +1,218 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 65px;
+}
+header #bell {
+  color: red;
+}
+header a, header a:hover {
+  transition: all 0.4s ease;
+}
+header a:hover {
+  transform: scale(1.1);
+}
+
+section {
+  padding-bottom: 2rem;
+  height: 30rem;
+}
+section .hero-div {
+  background-image: url(https://cdn.pixabay.com/photo/2020/08/27/12/15/planner-5521922_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section p {
+  padding: 2rem 3rem;
+  margin: 2rem;
+  background-color: rgba(35, 35, 35, 0.586);
+  color: white;
+  font-size: 2rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+h5 button {
+  padding: 2px 5px;
+  border: none;
+}
+h5 button:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+
+.noneclick {
+  pointer-events: none;
+}
+
+.footer-navigation {
+  background-color: rgb(43, 42, 42);
+  padding: 10px 0px;
+}
+.footer-navigation .foot-links {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 15px;
+  gap: 2rem;
+}
+.footer-navigation .foot-links p {
+  color: white;
+  padding: 5px 0px;
+  font-size: larger;
+}
+.footer-navigation .foot-links button {
+  background-color: rgba(35, 35, 35, 0.586);
+  color: white;
+  padding: 5px 15px;
+  border-color: white;
+  border-radius: 0.5rem;
+}
+.footer-navigation .foot-links button:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+.footer-navigation .foot-links input {
+  padding: 5px 8rem;
+  border-radius: 0.5rem;
+}
+.footer-navigation .foot-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.footer-navigation .foot-icons a,
+.footer-navigation .foot-icons a:hover {
+  transition: all 0.4s ease;
+}
+.footer-navigation .foot-icons a:hover {
+  transform: scale(1.2);
+}
+.footer-navigation .foot-copyright {
+  text-align: center;
+}
+.footer-navigation .foot-copyright p {
+  color: white;
+}
+
+div.card-container, div.card-container:hover {
+  transition: all 0.4s ease;
+}
+div.card-container:hover {
+  transform: scale(1.04);
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+}
+.card .card-title {
+  height: 30px;
+  text-align: center;
+}
+.card .card-text {
+  height: 40px;
+  padding-left: 1rem;
+}
+.card .list-group-item {
+  height: 50px;
+  padding-left: 2rem;
+}
+.card .action-delete {
+  margin-left: 1rem;
+}
+
+a i.bi {
+  color: white;
+}
+
+.done {
+  pointer-events: none;
+}
+.done > .card {
+  opacity: 0.3;
+  filter: sepia();
+}
+.done::before {
+  content: "✔";
+  position: absolute;
+  z-index: 1;
+  color: #4b6759;
+  font-size: xxx-large;
+  font-weight: 600;
+}
+
+.delete {
+  display: none;
+}
+
+#tasks {
+  height: 10px;
+}
+
+.mark {
+  color: rgb(41, 177, 223);
+}
+
+@media screen and (width <= 480px) {
+  .foot-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (width >= 481px) and (width < 768px) {
+  .foot-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (width >= 769px) and (width < 990px) {
+  .foot-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (width <= 320px) {
+  .foot-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  input {
+    padding: 5px 6rem;
+    border-radius: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
